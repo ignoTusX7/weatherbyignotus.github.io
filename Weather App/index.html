@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body onload="onStart()">
+    <div class="primaryBGColor alignCenter topBar">
+      <h1 class="secondaryText">Weather App</h1>
+      <p class="secondaryText">
+        This Website provide Weather deatils of your searched location.
+      </p>
+      <div class="footer">
+        github : <a href="https://github.com/ignoTusX7" target="_blank">ignoTusX7</a>
+    </div>
+    </div>
+    <div class="my-5 m-auto searchbar">
+      <input type="text" id="searchValue" class="serachbox" autofocus placeholder="Enter City name" />
+      <div class="btn">
+        <a class="btn-primary" type="button" onclick="getWeatherrep()">Search</a>
+      </div>
+    </div>
+    <section class="card">
+        <div class="date">Date: <span id="p1"></span></div>
+        <div class="date">Time: <span id="p2"></span></div>
+        <div class="weather loading">
+            <h2 class="city">Weather in <span id="city"></span></h2>
+            <h1 class="temp" id="temp">45°C</h1>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/02n.png" class="icon"></img>
+            <p class="bold">Description:<span class="description" id="description"></span></p>
+            </div>
+            <div class="humidity">Humidity: <span id="humidity"></span></div>
+            <div class="wind1">Wind speed: <span id="wind"></span></div>
+        </div>
+    </section>
+  
+    <script src="script.js"></script>
+  </body>
+</html>

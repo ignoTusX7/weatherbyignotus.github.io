@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    /* Transition-------------------------- */
+    --transition-duration: 0.3s;
+    --transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    /* Colors
+    -------------------------- */
+    --color-primary: #05a6f0;
+    --color-primary-dark: #0d47a1;
+    --color-primary-darker: #0c2d6b;
+    --color-primary-darkest: #061533;
+    --color-primary-light: #3d91f2;
+    --color-primary-lighter: #66afe9;
+    --color-primary-lightest: #e4f6fe;
+    --color-primary-contrast: #ffffff;
+    --color-primary-contrast-light: #ffffff;
+    --color-primary-contrast-lighter: #ffffff;
+    --color-primary-contrast-lightest: #ffffff;
+    --color-primary-contrast-contrast-light: #ffffff;
+    --color-secondary: #f0eeee;
+    --color-secondary-dark: #e6e6e6;
+    --color-secondary-darker: #d7d7d7;
+    --color-secondary-darkest: #b3b3b3;
+    --color-secondary-light: #e6e6e6;
+    --color-darkest: black;
+  
+    /* Link
+    -------------------------- */
+    --link-color: var(--color-darkest);
+    --link-color-hover: var(--color-primary-dark);
+    --link-color-visited: var(--color-primary-dark);
+    --link-color-visited-hover: var(--color-primary-dark);
+  
+    /* Border
+    -------------------------- */
+    --border-width: 1px;
+    --border-style: solid;
+    --border-color: var(--color-primary);
+    --border-color-hover: var(--color-primary-darkest);
+    --border-color-focus: var(--color-primary);
+    --border-color-selected: var(--color-primary);
+    --border-color-selected-hover: var(--color-primary-dark);
+  
+    /* Border radius
+    -------------------------- */
+    --border-radius: var(--border-radius);
+    --border-radius-small: var(--border-radius-small);
+    --border-radius-medium: var(--border-radius-medium);
+    --border-radius-large: var(--border-radius-large);
+    --border-radius-xlarge: var(--border-radius-xlarge);
+    --border-radius-xxlarge: var(--border-radius-xxlarge);
+    --border-radius-xxxl: var(--border-radius-xxxl);
+  
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 #fff;
+    font-weight: bold;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    text-shadow: 0 1px 0 #fff;
+    font-weight: normal;
+    font-style: normal;
+    /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+    text-shadow: 0 1px 0 #fff;
+    text-transform: none;
+    text-shadow: 0 1px 0 #fff;
+  }
+  .bold{
+    font-weight: bold;
+    color: black;
+  }
+  
+  .primaryTextColor {
+    color: var(--color-primary);
+  }
+  
+  .secondaryTextColor {
+    color: var(--color-secondary);
+  }
+  
+  .primaryText {
+    color: var(--color-primary);
+  }
+  
+  .secondaryText {
+    color: var(--color-secondary);
+  }
+  
+  .primaryText a {
+    color: var(--color-primary);
+  }
+  
+  .secondaryText a {
+    color: var(--color-secondary);
+  }
+  
+  .primaryText a:hover {
+    color: var(--color-primary);
+  }
+  
+  .secondaryText a:hover {
+    color: var(--color-secondary);
+  }
+  
+  .primaryBGColor {
+    background-color: var(--color-primary);
+  }
+  
+  .secondaryBGColor {
+    background-color: var(--color-secondary);
+  }
+  a{
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+
+  }
+  .footer :hover{
+    text-decoration: underline;
+  }
+  .alignCenter {
+    text-align: center;
+  }
+  .topBar {
+    height: 5rem;
+  }
+  .my-5 {
+    margin-top: 50px;
+  }
+  .m-auto {
+    margin: auto;
+  }
+  .btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+      border-color 0.2s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .btn :hover {
+    background-color: var(--color-primary-light);
+    border-color: var(--border-color-hover);
+    color: var(--color-secondary);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+      border-color 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .serachbox {
+    background-color: var(--color-secondary-light);
+    border-color: var(--color-secondary);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+      border-color 0.2s ease-in-out;
+  }
+  
+  .searchbar {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    gap: 2rem;
+  }
+  .searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    gap: 1rem;
+  }
+
+  .card{
+      background-color: var(--color-secondary-light);
+      border-color: var(--color-secondary);
+      text-decoration: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+      border-color 0.2s ease-in-out;
+    cursor: pointer;
+   
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 30%;
+    margin: auto;
+}  
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    margin: auto;
+    
+}
+
+      @media only screen and (max-width: 998px) {
+
+        .searchbar{
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .card{
+            width: 90%;
+        }
+      }
