@@ -55,7 +55,7 @@ const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=c
       console.log(error);
     });
 }
-var input = document.getElementById("myInput");
+var input = document.getElementById("searchValue");
 
 // Execute a function when the user presses a key on the keyboard
 input.addEventListener("keypress", function(event) {
