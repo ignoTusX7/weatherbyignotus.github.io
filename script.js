@@ -8,6 +8,14 @@ function refreshTime() {
 }
 setInterval(refreshTime, 1000);
 
+
+
+document.getElementById("searchValue").addEventListener("keyup", function(event) {event.preventDefault();
+    if (event.keyCode === 13) {
+        document.getElementById("btnSearch").click();
+    }
+});
+
 function onStart(){
 //   const url = `data.json`;
 const url = `https://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=c8b65b21210c0c4a768127634ed37c44`;
@@ -55,15 +63,3 @@ const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=c
       console.log(error);
     });
 }
-var input = document.getElementById("searchValue");
-
-// Execute a function when the user presses a key on the keyboard
-input.addEventListener("keypress", function(event) {
-  // If the user presses the "Enter" key on the keyboard
-  if (event.key === "Enter") {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("myBtn").click();
-  }
-});
